@@ -1,0 +1,717 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="1. 图文并茂解释开源许可证 GPL、BSD、MIT、Mozilla、Apache和LGPL的区别？2. 安装各发行版系统的安装(centos, rockylinux, ubuntu, 等)1）CentOS2）Ubuntu3. Linux中总结1）如何通过一个简短的关键字，例如process 获取相关的命令。2）通过命令的描述，选择一个命令，获取命令的man文档。3）解读man文档，man分几个部">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1-week">
+<meta property="og:url" content="http://example.com/2022/07/26/1-week/index.html">
+<meta property="og:site_name" content="Heitian Blog">
+<meta property="og:description" content="1. 图文并茂解释开源许可证 GPL、BSD、MIT、Mozilla、Apache和LGPL的区别？2. 安装各发行版系统的安装(centos, rockylinux, ubuntu, 等)1）CentOS2）Ubuntu3. Linux中总结1）如何通过一个简短的关键字，例如process 获取相关的命令。2）通过命令的描述，选择一个命令，获取命令的man文档。3）解读man文档，man分几个部">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2022/07/26/1-week/4-1-2022-07-26.png">
+<meta property="og:image" content="http://example.com/2022/07/26/1-week/5-1-2022-07-28.png">
+<meta property="og:image" content="http://example.com/2022/07/26/1-week/6-1-2022-07-27.png">
+<meta property="og:image" content="http://example.com/2022/07/26/1-week/6-2-2022-07-27.png">
+<meta property="og:image" content="http://example.com/2022/07/26/1-week/6-3-2022-07-27.png">
+<meta property="og:image" content="http://example.com/2022/07/26/1-week/6-4-2022-07-28.png">
+<meta property="article:published_time" content="2022-07-26T00:00:00.000Z">
+<meta property="article:modified_time" content="2022-08-11T06:27:30.785Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="weekly journal">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2022/07/26/1-week/4-1-2022-07-26.png">
+  
+  
+  <title>1-week - Heitian Blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="1-week">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-07-26 00:00" pubdate>
+        July 26, 2022 am
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      5.5k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      47 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">1-week</h1>
+            
+            <div class="markdown-body">
+              <h1 id="1-图文并茂解释开源许可证-GPL、BSD、MIT、Mozilla、Apache和LGPL的区别？"><a href="#1-图文并茂解释开源许可证-GPL、BSD、MIT、Mozilla、Apache和LGPL的区别？" class="headerlink" title="1. 图文并茂解释开源许可证 GPL、BSD、MIT、Mozilla、Apache和LGPL的区别？"></a>1. 图文并茂解释开源许可证 GPL、BSD、MIT、Mozilla、Apache和LGPL的区别？</h1><h1 id="2-安装各发行版系统的安装-centos-rockylinux-ubuntu-等"><a href="#2-安装各发行版系统的安装-centos-rockylinux-ubuntu-等" class="headerlink" title="2. 安装各发行版系统的安装(centos, rockylinux, ubuntu, 等)"></a>2. 安装各发行版系统的安装(centos, rockylinux, ubuntu, 等)</h1><h2 id="1）CentOS"><a href="#1）CentOS" class="headerlink" title="1）CentOS"></a>1）CentOS</h2><h2 id="2）Ubuntu"><a href="#2）Ubuntu" class="headerlink" title="2）Ubuntu"></a>2）Ubuntu</h2><h1 id="3-Linux中总结"><a href="#3-Linux中总结" class="headerlink" title="3. Linux中总结"></a>3. Linux中总结</h1><h3 id="1）如何通过一个简短的关键字，例如process-获取相关的命令。"><a href="#1）如何通过一个简短的关键字，例如process-获取相关的命令。" class="headerlink" title="1）如何通过一个简短的关键字，例如process 获取相关的命令。"></a>1）如何通过一个简短的关键字，例如process 获取相关的命令。</h3><h3 id="2）通过命令的描述，选择一个命令，获取命令的man文档。"><a href="#2）通过命令的描述，选择一个命令，获取命令的man文档。" class="headerlink" title="2）通过命令的描述，选择一个命令，获取命令的man文档。"></a>2）通过命令的描述，选择一个命令，获取命令的man文档。</h3><h3 id="3）解读man文档，man分几个部分？man每个部分的解释，特别是语法部分。-lt-gt-…等各代表什么含义。"><a href="#3）解读man文档，man分几个部分？man每个部分的解释，特别是语法部分。-lt-gt-…等各代表什么含义。" class="headerlink" title="3）解读man文档，man分几个部分？man每个部分的解释，特别是语法部分。&lt;&gt;, [] …等各代表什么含义。"></a>3）解读man文档，man分几个部分？man每个部分的解释，特别是语法部分。&lt;&gt;, [] …等各代表什么含义。</h3><h3 id="4）根据语法部分-简要的写几个操作。"><a href="#4）根据语法部分-简要的写几个操作。" class="headerlink" title="4）根据语法部分 简要的写几个操作。"></a>4）根据语法部分 简要的写几个操作。</h3><h1 id="4-切换到-etc-目录，列出fstab文件的详细信息，详细解决fstab一行，每个或每几个字符的详细含义。"><a href="#4-切换到-etc-目录，列出fstab文件的详细信息，详细解决fstab一行，每个或每几个字符的详细含义。" class="headerlink" title="4. 切换到/etc/目录，列出fstab文件的详细信息，详细解决fstab一行，每个或每几个字符的详细含义。"></a>4. 切换到/etc/目录，列出fstab文件的详细信息，详细解决fstab一行，每个或每几个字符的详细含义。</h1><p>   <img src="4-1-2022-07-26.png" srcset="/img/loading.gif" lazyload alt="4-1-202207261602"></p>
+<h3 id="一、文件介绍"><a href="#一、文件介绍" class="headerlink" title="一、文件介绍"></a>一、文件介绍</h3><div class="code-wrapper"><pre><code class="hljs">  /etc/fstab：自动挂载，系统开机时会主动读取这个文件内容，并按照配置挂载磁盘。
+</code></pre></div>
+<h3 id="二、文件解析"><a href="#二、文件解析" class="headerlink" title="二、文件解析"></a>二、文件解析</h3><div class="code-wrapper"><pre><code class="hljs">从图中可以看出配置一共六列，这六列的含义分别是:
+   
+   第一列：磁盘设备文件或者设备的Label或者UUID。
+     Label和UUID可通过dumpe2fs -h /dev/sda1命令查看/dev/sda1的信息；
+     其中&quot;Filesystem volume name:&quot;是Label; &quot;Filesystem UUID:&quot;是UUID;
+   
+   第二列：磁盘挂载目录，挂载点。
+     /、/usr、/swap是安装系统是分区的默认挂载点；
+     swap为交换分区不设置挂载点默认为none或swap；
+     挂载目录必须存在；
+  
+   第三列：磁盘文件系统的格式。
+     磁盘文件系统的格式，包括ext3、ext4、nfs、swap、xfs等；
+     其中swap是交换分区；
+   
+   第四列：挂载目录的参数。
+     Async/sync：设置是否为同步方式运行，默认为async；
+     auto/noauto：当下载mount -a 的命令时，此文件系统是否被主动挂载。默认为auto；
+     rw/ro：是否以以只读或者读写模式挂载；
+     exec/noexec：限制此文件系统内是否能够进行&quot;执行&quot;的操作；
+     user/nouser：是否允许用户使用mount命令挂载；
+     suid/nosuid：是否允许SUID的存在；
+     Usrquota：启动文件系统支持磁盘配额模式；
+     Grpquota：启动文件系统对群组磁盘配额模式的支持；
+     Defaults：同时具有rw,suid,dev,exec,auto,nouser,async等默认参数的设置；
+  
+   第五列：能否被dump备份程序备份。
+     0：不被dump备份；
+     1：使用dump的备份，并显示上一次备份至今的天数；
+     2：不定日期的进行dump备份；
+  
+   第六列：是否检验扇区，fask检验系统是否完整。
+     0：不检验扇区；
+     1：优先检验（根据目录设置）；
+     2：1级别检验完之后经行检验；
+     /目录永远是1，不能同时设置两个1。数字相同时同时检验；  
+   
+   解释第一行：
+     将&quot;/dev/mapper/centos-root&quot;磁盘文件系统挂载到&quot;/&quot;目录下；磁盘文件系统的格式是&quot;xfs&quot;；
+     参数为&quot;defaults&quot;拥有所有参数的默认设置，不被dump程序备份，不被fask检验文件系统完整性。
+        
+</code></pre></div>
+<h1 id="5-简要说明FHS结构。"><a href="#5-简要说明FHS结构。" class="headerlink" title="5. 简要说明FHS结构。"></a>5. 简要说明FHS结构。</h1><h3 id="文件系统FHS简介"><a href="#文件系统FHS简介" class="headerlink" title="文件系统FHS简介"></a>文件系统FHS简介</h3><p><img src="5-1-2022-07-28.png" srcset="/img/loading.gif" lazyload alt="5-1-202207281417"></p>
+<h4 id="Linux的文件系统层级结构：FileSystem-Hierarchy-Standdard-简称FHS"><a href="#Linux的文件系统层级结构：FileSystem-Hierarchy-Standdard-简称FHS" class="headerlink" title="Linux的文件系统层级结构：FileSystem Hierarchy Standdard(简称FHS)"></a>Linux的文件系统层级结构：FileSystem Hierarchy Standdard(简称FHS)</h4><div class="code-wrapper"><pre><code class="hljs"> /boot： 引导文件存放目录
+ /bin：所有用户使用的基本命令
+ /sbin：管理类的基本命令
+ /lib：启动时程序以来的基本共享库文件以及内核模块文件（/lib/modules）
+ /lib64：专用x86_64系统上的辅助共享库文件存放位置
+ /etc：配置文件目录
+ /root：管理员家目录
+ /dev：设备文件及特殊文件存储位置
+   b：block device，随机访问
+   c：character device，线性访问
+ /home/USERNAME：普通用户的家目录
+ /media：便携式移动设备挂载点
+ /mnt：临时文件系统挂载点
+ /opt：第三方应用程序的安装位置
+ /proc：用于输出内核与进程信息相关的虚拟文件系统
+ /srv：系统上运行的服务用到的数据
+ /sys：用于输出当前系统上硬件设备相关信息的虚拟文件系统
+ /tmp：临时文件存储位置
+ /usr：universal shared，read-only data
+   bin：保证系统拥有完整功能而提供的应用程序
+   sbin：
+   lib：32位使用
+   lin64：只存在64位系统
+   include：C程序的头文件
+   share：结构化独立数据
+     local：第三方应用程序的安装位置
+       bin，sbin，lib，lin64，etc，share
+ /var：variable data files
+   cache：应用程序缓存数据目录
+   lin：应用程序状态信息数据
+   local：专用于为/usr/local/下的应用程序存储可变数据
+   lock：锁文件
+   log：日志目录及文件
+   opt：专用于为/opt下的应用程序存储可变数据
+   run：运行中的进程相关数据，通常用于存储pid进程文件
+   spool：应用程序数据池
+   tmp：保存系统两次重启之间产生的临时数据
+</code></pre></div>
+<h1 id="6-用自己的理解总结-文件管理，用户管理，组用户，权限管理相关的命令。"><a href="#6-用自己的理解总结-文件管理，用户管理，组用户，权限管理相关的命令。" class="headerlink" title="6. 用自己的理解总结 文件管理，用户管理，组用户，权限管理相关的命令。"></a>6. 用自己的理解总结 文件管理，用户管理，组用户，权限管理相关的命令。</h1><h3 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h3><h4 id="Linux下的文件类型"><a href="#Linux下的文件类型" class="headerlink" title="Linux下的文件类型"></a>Linux下的文件类型</h4><div class="code-wrapper"><pre><code class="hljs"> -：普通文件
+ d：目录文件directory
+ l：符号链接文件link
+ b：块设备block
+ c：字符设备character
+ p：管道文件pipe
+ s：套接字文件socket
+</code></pre></div>
+<h4 id="文件操作命令"><a href="#文件操作命令" class="headerlink" title="文件操作命令"></a>文件操作命令</h4><h5 id="显示当前工作目录"><a href="#显示当前工作目录" class="headerlink" title="显示当前工作目录"></a>显示当前工作目录</h5><div class="code-wrapper"><pre><code class="hljs">命令 &quot;pwd&quot;：printing working directory
+用法 pwd [OPTION]...
+ -P 显示真实物理路径
+ -L 显示连接路径（默认）
+</code></pre></div>
+<p>   <img src="6-1-2022-07-27.png" srcset="/img/loading.gif" lazyload alt="6-1-202207271603"></p>
+<h5 id="绝对路径和相对路径"><a href="#绝对路径和相对路径" class="headerlink" title="绝对路径和相对路径"></a>绝对路径和相对路径</h5><div class="code-wrapper"><pre><code class="hljs">绝对路径
+   以正斜杠&quot;/&quot;即目录开始
+   完整的文件的位置路径
+   可用于任何想指定一个文件名的时候
+相对路径
+   不以斜杠开始
+   一般情况下，是指相对于当前工作目录的路径；特殊情况下，是相对于某目录的位置
+   可以作为一个简短的形式指定一个文件名
+</code></pre></div>
+<p>   <img src="6-2-2022-07-27.png" srcset="/img/loading.gif" lazyload alt="6-2-202207271615"></p>
+<h5 id="更改目录"><a href="#更改目录" class="headerlink" title="更改目录"></a>更改目录</h5><div class="code-wrapper"><pre><code class="hljs">命令 &quot;cd&quot;：change directory 改变目录
+用法 cd [OPTION] dir
+ -P：切换至物理路径，而非软连接目录
+ 可以使用绝对路径或相对路径
+    切换至父目录   &quot;cd ..&quot;
+    切换至当前用户主目录   &quot;cd&quot;
+    切换至以前的工作目录   &quot;cd -&quot;
+ 相关的环境变量
+    &quot;pwd&quot;：当前目录路径
+    &quot;OLDPWD&quot;：上一次目录路径
+</code></pre></div>
+<p>   <img src="6-3-2022-07-27.png" srcset="/img/loading.gif" lazyload alt="6-3-202207271633"></p>
+<h5 id="创建空文件和刷新时间"><a href="#创建空文件和刷新时间" class="headerlink" title="创建空文件和刷新时间"></a>创建空文件和刷新时间</h5><div class="code-wrapper"><pre><code class="hljs">命令 &quot;touch&quot;：可以用来创建空文件或刷新文件的时间
+用法 touch [OPTION]... FILE...
+ -a：仅改变atime和ctime
+ -m：仅改变mitme和ctime
+ -t：[[CC]YY]MMDDhhmm[.ss] 指定atime和ctime的时间戳
+ -c：如果文件不存在，则不创建
+</code></pre></div>
+<h5 id="复制文件和目录"><a href="#复制文件和目录" class="headerlink" title="复制文件和目录"></a>复制文件和目录</h5><div class="code-wrapper"><pre><code class="hljs">命令 &quot;cp(copy)&quot;：可以实现文件或目录的复制
+用法：
+  cp [option]... [-T] SOURCE DEST
+  cp [option]... SOURCE... DIRECTORY
+  cp [option]... -t DIRECTORY SOURCE...
+   -i：如果目标已存在，覆盖前提示是否覆盖
+   -n：不覆盖，注意两者顺序
+   -r，-R：递归复制
+   -d：不复制源文件，只复制链接名
+   -u：只复制源比目标更新文件或目标不存在的文件
+   -b：目标存在，覆盖前先备份，默认形式为filename~，只保留最近的一个备份
+</code></pre></div>
+<h5 id="移动和重命名文件"><a href="#移动和重命名文件" class="headerlink" title="移动和重命名文件"></a>移动和重命名文件</h5><div class="code-wrapper"><pre><code class="hljs">命令 &quot;mv&quot;：可以实现文件或目录移动和改名
+  同一分区移动数据，速度很快，数据位置没有变化
+  不同分区移动数据，速度相对慢，数据位置发生了变化
+用法：
+  mv [OPTION]... [-T] SOURCE DEST
+  mv [OPTION]... SOURCE... DIRECTORY
+  mv [OPTION]... -t DIRECTORY source...
+   -i：交互式
+   -f：强制
+   -b：目标存在，覆盖前先备份
+</code></pre></div>
+<h5 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h5><div class="code-wrapper"><pre><code class="hljs">命令 &quot;rm&quot;：可以删除文件和目录
+  此命令非常危险，谨慎使用
+用法：rm [OPTION]... FILE...
+ -i：交互式
+ -f：强制删除
+ -r：递归
+</code></pre></div>
+<h4 id="目录操作命令"><a href="#目录操作命令" class="headerlink" title="目录操作命令"></a>目录操作命令</h4><h5 id="列出目录内容"><a href="#列出目录内容" class="headerlink" title="列出目录内容"></a>列出目录内容</h5><div class="code-wrapper"><pre><code class="hljs">命令 &quot;ls&quot;：可以列出当前目录内容或指定目录内容
+用法 ls [options] [files_or_dirs]
+ -a：包含隐藏文件
+ -l：显示额外信息
+ -R：目录递归
+ -ld：目录和符号链接信息
+ -1：文件分行显示
+ -S：按文件大小排序
+ -t：按mtime排序
+ -u：配合-t选项，显示并按atime从新到旧排序
+ -X：按文件后缀排序
+&quot;ls -l&quot;看到的文件大小，不一定是实际文件真正占用空间的大小
+</code></pre></div>
+<h5 id="显示目录结构"><a href="#显示目录结构" class="headerlink" title="显示目录结构"></a>显示目录结构</h5><div class="code-wrapper"><pre><code class="hljs">命令 &quot;tree&quot;：以树状显示目录结构
+ -d：只显示目录
+ -L level：置顶显示的层级数目
+</code></pre></div>
+<h5 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h5><div class="code-wrapper"><pre><code class="hljs">命令 &quot;mkdir&quot;：创建目录
+ -p：存在于不报错，自动创建所需要的各目录，递归创建
+ -v：显示详细信息
+</code></pre></div>
+<h5 id="删除空目录"><a href="#删除空目录" class="headerlink" title="删除空目录"></a>删除空目录</h5><div class="code-wrapper"><pre><code class="hljs">命令 &quot;rmdir&quot;：删除空目录
+ -p：递归删除父空目录
+ -v：显示详细信息
+</code></pre></div>
+<h3 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h3><h4 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h4><div class="code-wrapper"><pre><code class="hljs">命令 &quot;useradd&quot;：创建新用户
+用法：useradd [options] login_name
+ -u：uid
+ -o：配合-u选项，不检查uid唯一性
+ -g：gid，指明用户所属基本组，可为组名，也可以gid
+ -c：&quot;COMMENT&quot; 用户的注释信息
+ -d：HOME_DIR 以指定的路径（不存在）为家目录
+ -s：指明用户的默认shell程序，可用列表在/etc/shells文件中
+ -G：GROUP1[,GROUP2,...] 为用户指明附加组，组需要存在
+ -N：不创建私用组做主组，使用users组做主组
+ -r：创建系统用户 centos6之前ID&lt;500 centos7之后ID&lt;1000
+ -m：创建家目录，用于系统用户
+ -M：不创建家目录，用于非系统用户
+ -p：指定加密的密码
+</code></pre></div>
+<h4 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h4><div class="code-wrapper"><pre><code class="hljs">命令 &quot;userdel&quot;：删除指定用户
+用法 userdel [options] login_name
+ -f，--force：强制
+ -r，--remove：删除用户家目录和邮箱
+</code></pre></div>
+<h4 id="修改用户属性"><a href="#修改用户属性" class="headerlink" title="修改用户属性"></a>修改用户属性</h4><div class="code-wrapper"><pre><code class="hljs">命令 &quot;usermod&quot;：可以修改用户属性
+用法 usermod [options] login_name
+ -u：更改uid
+ -g：更改主组
+ -G：新附加组，原有的会被覆盖，若要保留原有，则同时使用-a选项
+ -s：更改shell程序
+ -c：&quot;COMMENT&quot; 新的注释信息
+ -d：HOME 新家目录不会自动创建，若要创建新家目录并移动原有数据，同时使用-m选项
+ -l：login_name 新名字
+ -L：锁定用户，在/etc/shadow密码栏增加！
+ -U：解锁用户，将/etc/shadow密码栏的！去掉
+ -e：YYYY-MM-DD  指定用户账号过期日期
+ -f：设定非活动期限，即宽限期
+</code></pre></div>
+<h4 id="修改用户密码"><a href="#修改用户密码" class="headerlink" title="修改用户密码"></a>修改用户密码</h4><div class="code-wrapper"><pre><code class="hljs">命令 &quot;passwd&quot;：修改用户密码
+用法 passwd [OPTIONS] UserName
+ -d：删除指定用户密码
+ -l：锁定指定用户
+ -u：解锁指定用户
+ -e：强制用户下次登陆时修改密码
+ -f：强制操作
+ -n：mindays：指定最短使用期限
+ -x：maxdays：最大使用期限
+ -w：warndays：提前多少天开始警告
+ -i：inactivedays：非活动期限
+ --stdin：从标准输入接受用户密码，Ubuntu无此选项   
+</code></pre></div>
+<p>  <img src="6-4-2022-07-28.png" srcset="/img/loading.gif" lazyload alt="6-4-202207280957"></p>
+<h3 id="组用户"><a href="#组用户" class="headerlink" title="组用户"></a>组用户</h3><h4 id="创建组"><a href="#创建组" class="headerlink" title="创建组"></a>创建组</h4><div class="code-wrapper"><pre><code class="hljs">命令 &quot;groupadd&quot;：创建组
+用法 groupadd [OPTION]... group_name
+ -g：指定GID号
+ -r：创建系统组；Centos6之前I&lt;500;Centos7之后ID&lt;1000
+</code></pre></div>
+<h4 id="删除组"><a href="#删除组" class="headerlink" title="删除组"></a>删除组</h4><div class="code-wrapper"><pre><code class="hljs">命令 &quot;groupdel&quot;：删除组
+用法 groupdel [optinos] group_name
+ -f，force：强制删除，即使是用户主组也强制删除组，但会导致无主组的用户不可用无法登录
+</code></pre></div>
+<h4 id="修改组属性"><a href="#修改组属性" class="headerlink" title="修改组属性"></a>修改组属性</h4><div class="code-wrapper"><pre><code class="hljs">命令 &quot;groupmod&quot;：组属性修改
+用法 groupmod [option]... group
+ -n，group_name：新组名
+ -g，GID：修改gid号
+</code></pre></div>
+<h3 id="权限管理"><a href="#权限管理" class="headerlink" title="权限管理"></a>权限管理</h3><h4 id="更改属组属主"><a href="#更改属组属主" class="headerlink" title="更改属组属主"></a>更改属组属主</h4><div class="code-wrapper"><pre><code class="hljs">命令 &quot;chown&quot;：修改文件的属主和属组
+用法：
+  chown [option]... [owner][:[group]] filename...
+  chown [option]... --reference=RFILE filename...
+   owner：只修改属主
+   owner:group ：同时修改属主和属组
+   :group ：只修改属组，冒号也可用.代替
+   --reference=RFILE：参考指定的文件的属性来修改
+   -R：递归，此选项慎用！
+</code></pre></div>
+<h4 id="更改文件权限"><a href="#更改文件权限" class="headerlink" title="更改文件权限"></a>更改文件权限</h4><div class="code-wrapper"><pre><code class="hljs">命令 &quot;chmod&quot;：修改文件权限
+  文件权限分为三种：读；写；执行
+    读=r=4 ； 写=w=2 ； 执行=x=1
+  文件用户也分为三种：
+    owner=属主=u ； group=属组=g ； other=其他用户=o ； 所有用户=a
+  r和w权限对root用户无效
+  属主，属组，其他用户，三者之一有x权限，root就可以执行
+  
+用法：
+  chmod [option]... mode[,mode]... file...
+  chmod [option]... cotal-mode file...
+  chmod [option]... --reference=RFILE file...
+   -R：递归修改权限
+  
+</code></pre></div>
+<span id="more"></span>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/linux/">linux</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/weekly-journal/">weekly journal</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/08/02/2-week/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">2-week</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
